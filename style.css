@@ -14,6 +14,7 @@ html {
   height: 45px;
 }
 
+
 /* .navbar-brand a
        {
          font-size: 1500px;
@@ -40,6 +41,17 @@ html {
   font-weight: 550;
   font-size: 18px;
   text-decoration: none;
+}
+
+.nav-item a.on {
+  color: rgb(76, 76, 245);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.scrolled .home .on {
+  color: rgb(76, 76, 245);
+
 }
 
 .nav-item a:hover {
@@ -206,6 +218,7 @@ html {
 
 .Deaths {
   /* border: red solid 2px; */
+  margin: 0 20px;
 }
 
 .Recoverd {
@@ -306,7 +319,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 150px;
   /* border: solid black 2px; */
   position: relative;
 
@@ -1253,8 +1266,9 @@ ul {
   .wash_cards,
   .FullImgs_Do,
   .update_cards,
-  .fix {
-    flex-direction: column ;
+  .fix,
+  .display_nav {
+    flex-direction: column;
   }
 
   .footer_button button {
@@ -1283,6 +1297,7 @@ ul {
     font-size: 20px;
   }
 }
+
 @media (max-width: 768px) {
   .header h1 {
     font-size: 30px;
@@ -1340,8 +1355,9 @@ ul {
   .wash_cards,
   .FullImgs_Do,
   .update_cards,
-  .fix {
-    flex-direction: column ;
+  .fix,
+  .display_nav {
+    flex-direction: column;
   }
 
   .footer_button button {
@@ -1371,5 +1387,91 @@ ul {
   }
 }
 
+@media (max-width: 992px) {
+  .header h1 {
+    font-size: 30px;
+  }
 
-@media (max-width: 992px) {}
+  .sub_header {
+    position: absolute;
+    right: 100px;
+    top: -30px;
+  }
+
+  /* .di {
+    display: block;
+  } */
+
+  .Cases {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+
+  .Deaths {
+    margin-right: 5px;
+  }
+
+  .Deaths .number {
+    margin-right: 5px;
+  }
+
+  .type {
+    font-size: 20px;
+  }
+
+  .number {
+    font-size: 20px;
+  }
+
+  .about-para,
+  .prev_text,
+  .para,
+  .parts,
+  .footer_para,
+  .steps {
+    width: 100%;
+  }
+
+  .cards,
+  .symptom_card,
+  .symptom_footer,
+  .prev_Cards,
+  .full2,
+  .top_buttons,
+  .prev_steps,
+  .wash_cards,
+  .FullImgs_Do,
+  .update_cards,
+  .fix,
+  .display_nav {
+    flex-direction: column;
+  }
+
+  .footer_button button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .tab-content {
+    margin-top: 20px;
+  }
+
+  .left_deases {
+    margin-top: 1rem;
+  }
+
+  .symptom_para {
+    width: 100%;
+  }
+
+  .mid_footer {
+    flex-direction: column;
+  }
+
+  .mid_footer ul .li_title {
+    font-size: 20px;
+  }
+}
